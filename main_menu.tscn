@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://comu6j41cmiuf"]
 
+[ext_resource type="Script" uid="uid://dspgf174b15ee" path="res://start_game.gd" id="1_06t4h"]
+
 [node name="MainMenu" type="Control" unique_id=209030153]
 layout_mode = 3
 anchors_preset = 15
@@ -14,6 +16,7 @@ offset_left = 438.0
 offset_top = 324.0
 offset_right = 702.0
 offset_bottom = 369.0
+script = ExtResource("1_06t4h")
 
 [node name="Exit" type="Button" parent="." unique_id=841599782]
 layout_mode = 0
