@@ -10,7 +10,7 @@ func _ready() -> void:
 	Vv = 0;
 	Vh = 0;
 	a = 33;
-	Vmax = 100;
+	Vmax = 20;
 	pass # Replace with function body.
 
 
@@ -42,5 +42,4 @@ func _process(delta):
 			Vh *= 0.75;
 		else:
 			Vh = 0;
-	position.x += Vh;
-	position.y += Vv;
+	move_and_collide(Vector2(Vh, Vv));
