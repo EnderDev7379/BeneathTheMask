@@ -9,7 +9,7 @@ var Vmax;
 
 var interaction_stage = 0;
 
-const dialoges: Array[Array] = [
+const dialogues: Array[Array] = [
 	[
 "Zdravo spasioče,  hvala ti što možeš da nam pomogneš.",
 "Zdravo, oćeš na kafu.",
@@ -36,7 +36,7 @@ func _ready() -> void:
 func _process(delta):
 	if Input.is_action_pressed("move_up"):
 		$ShapeCast2D.rotation_degrees = 180;
-		if Vv <= Vmax:
+		if Vv >= -Vmax:
 			Vv -= a*delta
 		
 	elif Input.is_action_pressed("move_down"):
@@ -51,7 +51,7 @@ func _process(delta):
 			Vv = 0;
 	if Input.is_action_pressed("move_left"):
 		$ShapeCast2D.rotation_degrees = 90;
-		if Vh <= Vmax:
+		if Vh >= -Vmax:
 			Vh -= a*delta
 		
 	elif Input.is_action_pressed("move_right"):
@@ -75,7 +75,7 @@ func _process(delta):
 			if collider.get_parent() == $"../Npcs":
 				$"../CanvasLayer/ColorRect".visible = true;
 				if (interaction_stage == 0):
-					textBox.text = 
+					textBox.text = dialogues[collider.get_meta("type")][randi_range(0, 3)];
 				elif (interaction_stage == 1):
 					textBox.text = descriptions[collider.get_meta("id")];
 				get_tree().paused = true;

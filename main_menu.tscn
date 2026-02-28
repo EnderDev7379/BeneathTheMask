@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://comu6j41cmiuf"]
 
-[ext_resource type="Script" path="res://start_game.gd" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://dspgf174b15ee" path="res://start_game.gd" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://c0sx6q6024nnt" path="res://exit.gd" id="2_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://dmhgwlgmvw4m2" path="res://play_button.png" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://cfw8rmd3f54k8" path="res://exit_button.png" id="3_jix8l"]
+[ext_resource type="Texture2D" uid="uid://btmmamhxap5w3" path="res://credits_button.png" id="5_glbon"]
 
 [node name="MainMenu" type="Control" unique_id=209030153]
 layout_mode = 3
@@ -9,21 +13,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="StartGame" type="Button" parent="." unique_id=1560916271]
-layout_mode = 0
-offset_left = 438.0
-offset_top = 324.0
-offset_right = 702.0
-offset_bottom = 369.0
-script = ExtResource("1_06t4h")
-
-[node name="Exit" type="Button" parent="." unique_id=841599782]
-layout_mode = 0
-offset_left = 439.0
-offset_top = 394.0
-offset_right = 703.0
-offset_bottom = 439.0
 
 [node name="Label" type="Label" parent="." unique_id=1031350569]
 layout_mode = 0
@@ -34,3 +23,37 @@ offset_bottom = 139.0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=541487010]
 position = Vector2(576, 324)
+[node name="StartButton" type="TextureButton" parent="." unique_id=2014845393]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.4
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -115.0
+offset_right = 115.0
+offset_bottom = -25.0
+grow_horizontal = 2
+texture_normal = ExtResource("2_fu7sn")
+script = ExtResource("1_06t4h")
+
+[node name="ExitButton" type="TextureButton" parent="." unique_id=340975979]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.8
+anchor_right = 0.5
+anchor_bottom = 0.8
+grow_horizontal = 2
+texture_normal = ExtResource("3_jix8l")
+script = ExtResource("2_7vrkn")
+
+[node name="Credits" type="TextureButton" parent="." unique_id=885528468]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.6
+anchor_right = 0.5
+anchor_bottom = 0.6
+grow_horizontal = 2
+texture_normal = ExtResource("5_glbon")
