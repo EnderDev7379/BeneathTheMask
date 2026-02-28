@@ -7,3 +7,24 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="StartGame" type="Button" parent="." unique_id=1560916271]
+layout_mode = 0
+offset_left = 438.0
+offset_top = 324.0
+offset_right = 702.0
+offset_bottom = 369.0
+
+[node name="Exit" type="Button" parent="." unique_id=841599782]
+layout_mode = 0
+offset_left = 439.0
+offset_top = 394.0
+offset_right = 703.0
+offset_bottom = 439.0
+
+[node name="Label" type="Label" parent="." unique_id=1031350569]
+layout_mode = 0
+offset_left = 390.0
+offset_top = 75.0
+offset_right = 771.0
+offset_bottom = 139.0
