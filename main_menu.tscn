@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://comu6j41cmiuf"]
 
 [ext_resource type="Script" uid="uid://dspgf174b15ee" path="res://start_game.gd" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://c0sx6q6024nnt" path="res://exit.gd" id="2_7vrkn"]
 
 [node name="MainMenu" type="Control" unique_id=209030153]
 layout_mode = 3
@@ -24,6 +25,7 @@ offset_left = 439.0
 offset_top = 394.0
 offset_right = 703.0
 offset_bottom = 439.0
+script = ExtResource("2_7vrkn")
 
 [node name="Label" type="Label" parent="." unique_id=1031350569]
 layout_mode = 0
