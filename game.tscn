@@ -7,7 +7,10 @@
 [sub_resource type="TileSet" id="TileSet_mwb40"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_feb5d"]
-size = Vector2(130, 130)
+size = Vector2(128, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fc0e3"]
+size = Vector2(96, 25)
 
 [node name="Game" type="Node2D" unique_id=1308360868]
 
@@ -26,10 +29,16 @@ texture = ExtResource("2_e2o6t")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1265946536]
 
+[node name="ShapeCast2D" type="ShapeCast2D" parent="CharacterBody2D" unique_id=1820621805]
+shape = SubResource("RectangleShape2D_fc0e3")
+target_position = Vector2(0, 128)
+
 [node name="Npcs" type="Node2D" parent="." unique_id=590416268]
 
 [node name="Npc0" parent="Npcs" unique_id=306022878 instance=ExtResource("3_feb5d")]
 scale = Vector2(5, 5)
+metadata/id = 0
+metadata/type = 0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1150132305]
 

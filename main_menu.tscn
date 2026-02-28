@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://comu6j41cmiuf"]
 
-[ext_resource type="Script" uid="uid://dspgf174b15ee" path="res://start_game.gd" id="1_06t4h"]
+[ext_resource type="Script" path="res://start_game.gd" id="1_06t4h"]
 
 [node name="MainMenu" type="Control" unique_id=209030153]
 layout_mode = 3
@@ -31,3 +31,6 @@ offset_left = 390.0
 offset_top = 75.0
 offset_right = 771.0
 offset_bottom = 139.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=541487010]
+position = Vector2(576, 324)
