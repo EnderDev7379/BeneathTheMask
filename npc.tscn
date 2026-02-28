@@ -8,6 +8,7 @@ size = Vector2(17, 29)
 [node name="NPC" type="AnimatableBody2D" unique_id=611274]
 metadata/id = -1
 metadata/type = -1
+metadata/interacted = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=244191496]
 shape = SubResource("RectangleShape2D_giwyn")
