@@ -31,7 +31,6 @@ metadata/bad_accepted = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1421894919]
 shape = SubResource("RectangleShape2D_feb5d")
-disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1470862280]
 texture = ExtResource("2_e2o6t")
