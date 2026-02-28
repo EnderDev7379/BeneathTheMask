@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cq4thvb2abv3t" path="res://pixil-frame-0_28.png" id="7_eow3j"]
 [ext_resource type="Texture2D" uid="uid://8od1plxhkcny" path="res://pixil-frame-0_26.png" id="8_j5wjh"]
 [ext_resource type="Texture2D" uid="uid://b7cr7pwvjtdud" path="res://pixil-frame-0_27.png" id="9_vef74"]
+[ext_resource type="Texture2D" uid="uid://f82rr6e21i5k" path="res://pixil-frame-0_29.png" id="10_hve3p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7jktm"]
 texture = ExtResource("1_fc0e3")
@@ -482,3 +483,9 @@ texture_filter = 1
 position = Vector2(-182, -2311)
 scale = Vector2(4.85, 4.53)
 texture = ExtResource("9_vef74")
+
+[node name="bunker" type="Sprite2D" parent="." unique_id=699965453]
+texture_filter = 1
+position = Vector2(388, -4252)
+scale = Vector2(1.73, 2.03)
+texture = ExtResource("10_hve3p")
