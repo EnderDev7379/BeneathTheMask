@@ -6,6 +6,7 @@
 size = Vector2(17, 29)
 
 [node name="NPC" type="AnimatableBody2D" unique_id=611274]
+scale = Vector2(5, 5)
 metadata/id = -1
 metadata/type = -1
 metadata/interacted = false

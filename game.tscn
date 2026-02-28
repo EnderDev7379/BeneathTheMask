@@ -44,10 +44,13 @@ script = ExtResource("2_feb5d")
 
 [node name="Npcs" type="Node2D" parent="." unique_id=590416268]
 
-[node name="Npc0" parent="Npcs" unique_id=306022878 instance=ExtResource("3_feb5d")]
-scale = Vector2(5, 5)
-metadata/id = 0
-metadata/type = 0
+[node name="NPC0" parent="Npcs" unique_id=611274 instance=ExtResource("3_feb5d")]
+
+[node name="NPC1" parent="Npcs" unique_id=366220695 instance=ExtResource("3_feb5d")]
+position = Vector2(308.99994, 0)
+
+[node name="NPC2" parent="Npcs" unique_id=1624257446 instance=ExtResource("3_feb5d")]
+position = Vector2(103.99999, 231.99998)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1150132305]
 
