@@ -17,7 +17,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if Input.is_action_pressed("move_up"):
-		if Vv <= Vmax:
+		if Vv >= -Vmax:
 			Vv -= a*delta
 		
 	elif Input.is_action_pressed("move_down"):
@@ -30,7 +30,7 @@ func _process(delta):
 		else:
 			Vv = 0;
 	if Input.is_action_pressed("move_left"):
-		if Vh <= Vmax:
+		if Vh >= -Vmax:
 			Vh -= a*delta
 		
 	elif Input.is_action_pressed("move_right"):

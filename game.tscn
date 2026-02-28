@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://cm5a8n2m5t3np"]
+[gd_scene format=3 uid="uid://c05wqhewph1ul"]
 
 [ext_resource type="Script" uid="uid://clpat1x0781gs" path="res://player.gd" id="1_80nbo"]
 [ext_resource type="Texture2D" uid="uid://126flkysbqm1" path="res://icon.svg" id="2_e2o6t"]
-[ext_resource type="PackedScene" uid="uid://0tpwuyg6i6p8" path="res://npc.tscn" id="3_feb5d"]
+[ext_resource type="PackedScene" path="res://npc.tscn" id="3_feb5d"]
 
 [sub_resource type="TileSet" id="TileSet_mwb40"]
 
