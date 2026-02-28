@@ -4,13 +4,15 @@ var Vv;
 var Vh;
 var a;
 var Vmax;
+var directionV = 1;
+var directionH = 1;
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Vv = 0;
 	Vh = 0;
-	a = 10;
-	Vmax = 100
+	a = 33;
+	Vmax = 100;
 	pass # Replace with function body.
 
 
@@ -18,17 +20,29 @@ func _ready() -> void:
 func _process(delta):
 	if Input.is_action_pressed("move_up"):
 		if Vv <= Vmax:
-			Vv += a*delta
-		position.y -= Vv;
-	if Input.is_action_pressed("move_down"):
+			Vv -= a*delta
+		
+	elif Input.is_action_pressed("move_down"):
 		if Vv <= Vmax:
 			Vv += a*delta
-		position.y += Vv;
+		
+	else:
+		if Vv > 0.1:
+			Vv *= 0.75;
+		else:
+			Vv = 0;
 	if Input.is_action_pressed("move_left"):
 		if Vh <= Vmax:
-			Vh += a*delta
-		position.x -= Vh;
-	if Input.is_action_pressed("move_right"):
+			Vh -= a*delta
+		
+	elif Input.is_action_pressed("move_right"):
 		if Vh <= Vmax:
 			Vh += a*delta
-		position.x += Vh;
+		
+	else:
+		if Vh > 0.1:
+			Vh *= 0.75;
+		else:
+			Vh = 0;
+	position.x += Vh*directionH;
+	position.y += Vv*directionV;
