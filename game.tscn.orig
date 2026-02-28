@@ -2,10 +2,14 @@
 
 [ext_resource type="Script" uid="uid://clpat1x0781gs" path="res://player.gd" id="1_80nbo"]
 [ext_resource type="Texture2D" uid="uid://dojl2fmpfybc" path="res://Untitled.png" id="1_fc0e3"]
+<<<<<<< HEAD
+[ext_resource type="Texture2D" uid="uid://126flkysbqm1" path="res://icon.svg" id="2_e2o6t"]
+[ext_resource type="Script" path="res://interaction.gd" id="2_feb5d"]
+=======
 [ext_resource type="Script" uid="uid://wxurhjkq2tkq" path="res://interaction.gd" id="2_feb5d"]
+>>>>>>> c3b1fa2b1897159ee34d7671fb741f8acec9be33
 [ext_resource type="PackedScene" uid="uid://0tpwuyg6i6p8" path="res://npc.tscn" id="3_feb5d"]
 [ext_resource type="FontFile" uid="uid://v5c1b5d5a70p" path="res://PixelifySans-VariableFont_wght.ttf" id="5_7jktm"]
-[ext_resource type="Script" uid="uid://m51xxy7h076u" path="res://npcs.gd" id="5_eow3j"]
 [ext_resource type="Texture2D" uid="uid://cq4thvb2abv3t" path="res://pixil-frame-0_28.png" id="7_eow3j"]
 [ext_resource type="Texture2D" uid="uid://8od1plxhkcny" path="res://pixil-frame-0_26.png" id="8_j5wjh"]
 [ext_resource type="Texture2D" uid="uid://b7cr7pwvjtdud" path="res://pixil-frame-0_27.png" id="9_vef74"]
@@ -118,7 +122,6 @@ tile_set = SubResource("TileSet_mwb40")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=811263719]
 position = Vector2(250, 350)
-scale = Vector2(0.2, 0.2)
 motion_mode = 1
 slide_on_ceiling = false
 platform_on_leave = 2
@@ -127,7 +130,6 @@ metadata/good_accepted = 0
 metadata/bad_accepted = 0
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1265946536]
-zoom = Vector2(5, 5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1421894919]
 position = Vector2(0, -0.5)
@@ -149,7 +151,6 @@ target_position = Vector2(0, 128)
 script = ExtResource("2_feb5d")
 
 [node name="Npcs" type="Node2D" parent="." unique_id=590416268]
-script = ExtResource("5_eow3j")
 
 [node name="NPC0" parent="Npcs" unique_id=611274 instance=ExtResource("3_feb5d")]
 position = Vector2(414.99997, 166.99998)

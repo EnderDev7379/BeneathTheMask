@@ -10,8 +10,8 @@ var Vmax;
 func _ready() -> void:
 	Vv = 0;
 	Vh = 0;
-	a = 33;
-	Vmax = 20;
+	a = 1;
+	Vmax = 4;
 	print(anim);
 	anim.play("walk");
 	pass # Replace with function body.
