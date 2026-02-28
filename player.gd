@@ -4,7 +4,7 @@ var Vv;
 var Vh;
 var a;
 var Vmax;
-
+@onready var anim = $Sprite2D/AnimationPlayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,6 +12,8 @@ func _ready() -> void:
 	Vh = 0;
 	a = 33;
 	Vmax = 20;
+	print(anim);
+	anim.play("walk");
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -47,3 +49,16 @@ func _process(delta):
 		else:
 			Vh = 0;
 	move_and_collide(Vector2(Vh, Vv));
+	update_animation();
+func update_animation():
+	var moving = Vector2(Vh, Vv).length() > 1
+	
+	if anim == null:
+		return
+	
+	if moving:
+		if anim.current_animation != "walk":
+			anim.play("walk")
+	else:
+		if anim.current_animation != "idle":
+			anim.play("idle")
