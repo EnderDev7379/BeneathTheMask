@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://wxurhjkq2tkq" path="res://interaction.gd" id="2_feb5d"]
 [ext_resource type="PackedScene" uid="uid://0tpwuyg6i6p8" path="res://npc.tscn" id="3_feb5d"]
 [ext_resource type="FontFile" uid="uid://v5c1b5d5a70p" path="res://PixelifySans-VariableFont_wght.ttf" id="5_7jktm"]
+[ext_resource type="Script" uid="uid://m51xxy7h076u" path="res://npcs.gd" id="5_eow3j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7jktm"]
 texture = ExtResource("1_fc0e3")
@@ -55,6 +56,7 @@ tile_set = SubResource("TileSet_mwb40")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=811263719]
 position = Vector2(250, 350)
+scale = Vector2(0.2, 0.2)
 motion_mode = 1
 slide_on_ceiling = false
 platform_on_leave = 2
@@ -63,6 +65,7 @@ metadata/good_accepted = 0
 metadata/bad_accepted = 0
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1265946536]
+zoom = Vector2(5, 5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1421894919]
 shape = SubResource("RectangleShape2D_feb5d")
@@ -77,6 +80,7 @@ target_position = Vector2(0, 128)
 script = ExtResource("2_feb5d")
 
 [node name="Npcs" type="Node2D" parent="." unique_id=590416268]
+script = ExtResource("5_eow3j")
 
 [node name="NPC0" parent="Npcs" unique_id=611274 instance=ExtResource("3_feb5d")]
 
