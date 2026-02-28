@@ -69,14 +69,17 @@ func _process(delta):
 	if Input.is_action_just_pressed("Interaction"):
 		if (get_tree().paused):
 			interaction_stage += 1
+			get_tree().paused = false;
 		var raycast: ShapeCast2D = $ShapeCast2D;
 		if raycast.is_colliding():
 			var collider: Node = raycast.get_collider(0);
 			if collider.get_parent() == $"../Npcs":
 				$"../CanvasLayer/ColorRect".visible = true;
 				if (interaction_stage == 0):
-					textBox.text = dialogues[collider.get_meta("type")][randi_range(0, 3)];
+					textBox.text = dialogues[collider.get_meta("type")][randi_range(0, 2)];
 				elif (interaction_stage == 1):
 					textBox.text = descriptions[collider.get_meta("id")];
+				elif (interaction_stage == 2):
+					return
 				get_tree().paused = true;
 			
