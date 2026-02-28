@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://126flkysbqm1" path="res://icon.svg" id="2_e2o6t"]
 [ext_resource type="Script" uid="uid://wxurhjkq2tkq" path="res://interaction.gd" id="2_feb5d"]
 [ext_resource type="PackedScene" uid="uid://0tpwuyg6i6p8" path="res://npc.tscn" id="3_feb5d"]
+[ext_resource type="FontFile" uid="uid://v5c1b5d5a70p" path="res://PixelifySans-VariableFont_wght.ttf" id="5_7jktm"]
 
 [sub_resource type="TileSet" id="TileSet_mwb40"]
 
@@ -62,6 +63,7 @@ offset_right = 1152.0
 offset_bottom = 67.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(7.757335, 7.757335, 7.757335, 1)
+theme_override_fonts/font = ExtResource("5_7jktm")
 theme_override_font_sizes/font_size = 48
 text = "test"
 autowrap_mode = 2
