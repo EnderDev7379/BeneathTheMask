@@ -1,12 +1,13 @@
-[gd_scene format=3 uid="uid://c05wqhewph1ul"]
+[gd_scene format=3 uid="uid://cm5a8n2m5t3np"]
 
 [ext_resource type="Script" uid="uid://clpat1x0781gs" path="res://player.gd" id="1_80nbo"]
 [ext_resource type="Texture2D" uid="uid://126flkysbqm1" path="res://icon.svg" id="2_e2o6t"]
+[ext_resource type="PackedScene" uid="uid://0tpwuyg6i6p8" path="res://npc.tscn" id="3_feb5d"]
 
 [sub_resource type="TileSet" id="TileSet_mwb40"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_e2o6t"]
-radius = 0.13693526
+radius = 0.61807865
 
 [node name="Game" type="Node2D" unique_id=1308360868]
 
@@ -19,8 +20,6 @@ rotation = 3.1415927
 scale = Vector2(131.63403, -137.71002)
 script = ExtResource("1_80nbo")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1960444858]
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1421894919]
 shape = SubResource("CircleShape2D_e2o6t")
 
@@ -28,7 +27,17 @@ shape = SubResource("CircleShape2D_e2o6t")
 scale = Vector2(0.0075731287, 0.0075731287)
 texture = ExtResource("2_e2o6t")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1265946536]
-position = Vector2(250, 350)
-rotation = -3.1415925
-scale = Vector2(131.63403, -137.71002)
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1265946536]
+
+[node name="Label" type="Label" parent="CharacterBody2D/Camera2D" unique_id=1732432698]
+offset_left = 1.8992054
+offset_top = -2.5415723
+offset_right = 90.89921
+offset_bottom = 64.45843
+theme_override_font_sizes/font_size = 48
+text = "test"
+
+[node name="Npcs" type="Node2D" parent="." unique_id=590416268]
+
+[node name="Npc0" parent="Npcs" unique_id=306022878 instance=ExtResource("3_feb5d")]
+scale = Vector2(5, 5)
