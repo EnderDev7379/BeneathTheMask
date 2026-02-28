@@ -3,7 +3,9 @@
 [ext_resource type="Script" uid="uid://clpat1x0781gs" path="res://player.gd" id="1_80nbo"]
 [ext_resource type="Texture2D" uid="uid://dojl2fmpfybc" path="res://Untitled.png" id="1_fc0e3"]
 [ext_resource type="Texture2D" uid="uid://126flkysbqm1" path="res://icon.svg" id="2_e2o6t"]
+[ext_resource type="Script" uid="uid://wxurhjkq2tkq" path="res://interaction.gd" id="2_feb5d"]
 [ext_resource type="PackedScene" uid="uid://0tpwuyg6i6p8" path="res://npc.tscn" id="3_feb5d"]
+[ext_resource type="FontFile" uid="uid://v5c1b5d5a70p" path="res://PixelifySans-VariableFont_wght.ttf" id="5_7jktm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7jktm"]
 texture = ExtResource("1_fc0e3")
@@ -53,7 +55,14 @@ tile_set = SubResource("TileSet_mwb40")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=811263719]
 position = Vector2(250, 350)
+motion_mode = 1
+slide_on_ceiling = false
+platform_on_leave = 2
 script = ExtResource("1_80nbo")
+metadata/good_accepted = 0
+metadata/bad_accepted = 0
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1265946536]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1421894919]
 shape = SubResource("RectangleShape2D_feb5d")
@@ -61,11 +70,11 @@ shape = SubResource("RectangleShape2D_feb5d")
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1470862280]
 texture = ExtResource("2_e2o6t")
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1265946536]
-
 [node name="ShapeCast2D" type="ShapeCast2D" parent="CharacterBody2D" unique_id=1820621805]
+process_mode = 3
 shape = SubResource("RectangleShape2D_fc0e3")
 target_position = Vector2(0, 128)
+script = ExtResource("2_feb5d")
 
 [node name="Npcs" type="Node2D" parent="." unique_id=590416268]
 
@@ -76,17 +85,19 @@ metadata/type = 0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1150132305]
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=453476295]
+[node name="DialogueBox" type="ColorRect" parent="CanvasLayer" unique_id=453476295]
 visible = false
 offset_top = 395.0
 offset_right = 1152.0
 offset_bottom = 648.0
 
-[node name="Label" type="Label" parent="CanvasLayer/ColorRect" unique_id=1732432698]
+[node name="Label" type="Label" parent="CanvasLayer/DialogueBox" unique_id=1732432698]
 layout_mode = 0
-offset_right = 89.0
+offset_right = 1152.0
 offset_bottom = 67.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(7.757335, 7.757335, 7.757335, 1)
+theme_override_fonts/font = ExtResource("5_7jktm")
 theme_override_font_sizes/font_size = 48
 text = "test"
+autowrap_mode = 2

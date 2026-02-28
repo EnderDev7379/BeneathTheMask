@@ -1,15 +1,14 @@
 [gd_scene format=3 uid="uid://0tpwuyg6i6p8"]
 
 [ext_resource type="Texture2D" uid="uid://blftvva5yqyjj" path="res://characters/npc1.png" id="1_ideak"]
-[ext_resource type="Script" uid="uid://buobbespsoewf" path="res://npc.gd" id="1_xxcha"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_giwyn"]
 size = Vector2(17, 29)
 
 [node name="NPC" type="AnimatableBody2D" unique_id=611274]
-script = ExtResource("1_xxcha")
 metadata/id = -1
 metadata/type = -1
+metadata/interacted = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=244191496]
 shape = SubResource("RectangleShape2D_giwyn")
