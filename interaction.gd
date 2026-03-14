@@ -155,9 +155,9 @@ func _process(delta: float) -> void:
 						textBox.text = "Da li da spasiš ovu osobu?\n(E = da, Q = ne)"
 					else:
 						if (collider.get_meta("type") == 0):
-							player.set_meta("good_accepted", player.get_meta("good_accepted") + 1);
+							player.set_meta("good_accepted", player.get_meta("good_accepted", 0) + 1);
 						elif (collider.get_meta("type") == 1):
-							player.set_meta("bad_accepted", player.get_meta("bad_accepted") + 1);
+							player.set_meta("bad_accepted", player.get_meta("bad_accepted", 0) + 1);
 						interaction_stage = 0;
 						collider.set_meta("interacted", true);
 						$"../../CanvasLayer/DialogueBox".visible = false;
