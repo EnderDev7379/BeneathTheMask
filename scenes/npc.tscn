@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://0tpwuyg6i6p8"]
 
-[ext_resource type="Texture2D" uid="uid://blftvva5yqyjj" path="res://textures/characters/npc1.png" id="1_ideak"]
+[ext_resource type="Texture2D" uid="uid://walfqq67nre" path="res://textures/characters/NPC.png" id="1_nh2m4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_giwyn"]
-size = Vector2(17, 29)
+size = Vector2(11, 20)
 
 [node name="NPC" type="AnimatableBody2D" unique_id=611274]
 metadata/id = -1
@@ -11,9 +11,11 @@ metadata/type = -1
 metadata/interacted = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=244191496]
+position = Vector2(0, -10)
 shape = SubResource("RectangleShape2D_giwyn")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=494836426]
 texture_filter = 1
 texture_repeat = 1
-texture = ExtResource("1_ideak")
+position = Vector2(0.5, -10)
+texture = ExtResource("1_nh2m4")

@@ -1,0 +1,119 @@
+keys,en,sr
+greet_bad_1,"Hell0 savior, thank you for being able to help us.","Zdrav0 spasioče, hvala ti što možeš da nam pomogneš."
+greet_bad_2,"Why did you come to this village to give us false hope, get out of here!!!","Šta si došao u ovo selo da nam daješ lažnu nadu, odlazi odavde!!!"
+greet_bad_3,"Hello beautiful, I hope you are well and that you are enjoying our village before it disappears.","Zdravo lepotice, nadam se da si dobro i da uživaš u našem selu pre nego što nestane."
+greet_good_1,"Hello savior, thank you for being able to help us.","Zdravo spasioče, hvala ti što možeš da nam pomogneš."
+greet_good_2,"Hello, want some coffee.","Zdravo, oćeš na kafu."
+greet_good_3,"Why did you come to us? Don't you know that doom is coming to this village, get out of here!!!","Šta si došao kod nas? Zar ne znaš da dolazi propast u ovo selo, odlazi odavde!!!"
+greet_oldman_1,"I didn't tell you this, but only the good ones have a connection to water.","Nisam ti ja ovo rekao, ali samo dobri imaju veze sa vodom."
+greet_oldman_2,"I didn't tell you this, but if the job and the resource don't match, you know what to do.","Nisam ti ja ovo rekao, ali ako se posao i resurs ne poklapaju, znaš šta da radiš."
+greet_oldman_3,"I didn't tell you this, but those with a snake instead of a tongue always write hello with a zero.","Nisam ti ja ovo rekao, ali oni sa zmijom umesto jezika uvek pišu zdravo sa nulom."
+cata_good_1,"This man is a farmer, he works in the field all day, he has a wife and two cats.
+The resource he brings is grain.","Ovaj čovek je seljak, radi ceo dan u njivi ima ženu i dve mačke. 
+Resurs koji donosi su žitarice."
+cata_good_2,"This man is the farmer's wife, they live together with two cats. She also knows how to cook.
+The resource she brings is cooking food.","Ovaj čovek je žena od seljaka, oni zajedno žive sa dve mačke. Ona takođe zna da kuva.
+Resurs koji donosi je spremanje hrane."
+cata_good_3,"This man is an old grandmother who has a chicken farm.
+The resource she brings is chickens and their eggs.","Ovaj čovek je stara baba koja ima farmu kokoški.
+Resurs koji donosi su kokoške i njihova jaja."
+cata_good_4,"This man is old and sick, but he has a water well.
+The resource he brings is water.","Ovaj čovek je star i bolestan, ali ima bunar vode.
+Resurs koji donosi je voda."
+cata_good_5,"This man is young and his uncle is Tesla.
+The resource he brings is electricity.","Ovaj čovek je mlad i ujak mu je Tesla.
+Resurs koji donosi je struja."
+cata_good_6,This man is a fish. He needs water.,Ovaj čovek je riba. Treba mu voda.
+cata_good_7,"This man is a fisherman, he catches fish.
+The resource he brings is fish and seafood.","Ovaj čovek je ribar, on lovi ribu.
+Resurs koji donosi je riba i morski plodovi."
+cata_good_8,"This man is a fruit grower, he grows various fruits and has a son named Janko.
+The resource he brings is fruit and Janko.","Ovaj čovek je voćar, on gaji razno voće i ima sina Janka.
+Resurs koji donosi su voće i Janko."
+cata_good_9,"I am the son Janko, my pets are birds that fly through my father's orchard.","Ja sam sin Janko, moji ljubimci su ptice koje lete kroz očev voćnjak."
+cata_good_10,"This man is the butcher in the village, he feeds the stray cats around.
+The resource he brings is meat.","Ovaj čovek je mesar u selu, hrani okolne mačke lutalice.
+Resurs koji donosi je meso."
+cata_good_11,"This man has a problem because a fox keeps killing his poultry.
+The resource he brings is surviving poultry.","Ovaj čovek ima problem jer mu lisica stalno ubija živinu.
+Resurs koji donosi je preživela živina."
+cata_good_12,This man has a quiet lake behind his house. He says water remembers everything.,Ovaj čovek ima tiho jezero iza kuće. Kaže da voda pamti sve.
+cata_good_13,"This young mechanic can start even a broken generator.
+The resource he brings is the ability to repair broken things.","Ovaj mladi mehaničar ume da pokrene i pokvareni agregat.
+Resurs koji donosi je mogućnost popravljanja pokvarenog."
+cata_good_14,"This man is an angry baker because people don't like his bakery.
+The resource he brings are pastries from his bakery.","Ovaj čovek je besan pekar jer ljudi ne vole njegovu pekaru.
+Resurs koji donosi su peciva iz njegove pekare."
+cata_good_15,"This man is a woman who knows how to make a combination of herbs, which when lit, relax people.
+The resource she brings are relaxation herbs.","Ovaj čovek je žena koja zna da napravi kombinaciju trava, koje kad se zapale opuštaju ljude.
+Resurs koji donosi su trave za opuštanje."
+cata_good_16,"This man is a policeman and he knows who the dealers are in the village.
+The resource he brings is law and order.","Ovaj čovek je policajac i on zna ko su dileri u selu.
+Resurs koji donosi je red i mir."
+cata_good_17,"This man is a priest. He will cleanse your soul from sin with prayer.
+The resource he brings is faith in God and candles.","Ovaj čovek je sveštenik. Očistiće ti dušu od greha sa molitvom.
+Resurs koji donosi je vera u Boga i sveće."
+cata_good_18,"This man is a detective who suspects the ranger.
+The resource he brings is a better brain than yours.","Ovaj čovek je detektiv koji sumnja na šumara.
+Resurs koji donosi je bolji mozak nego ti."
+cata_good_19,"This man is a merchant who sells sweets.
+The resource he brings is sweets.","Ovaj čovek je trgovac koji prodaje slatkiše.
+Resurs koji donosi su slatkiši."
+cata_good_20,This man steals from kleptomaniacs and gives to the poor.,Ovaj čovek krade od kleptomanijaka i daje siromašnima.
+cata_good_21,This man makes no sense. He knows nothing. You can choose not to pick him.,Ovaj čovek nema smisla. On ne zna ništa. Možete da ne izaberite njega.
+cata_good_22,"This man is a poker player who gives his money to charity.
+The resource he brings is money.","Ovaj čovek je pokeraš koji svoje pare daje u dobrotvorne svrhe.
+Resurs koji donosi su pare."
+cata_bad_1,"This man is the farmer's wife, they live together with two dogs. She also knows how to cook.
+The resource she brings is cooking food.","Ovaj čovek je žena od seljaka, oni žive zajedno sa dva psa. Ona takođe zna da kuva.
+Resurs koji donosi je spremanje hrane."
+cata_bad_2,"This man is an old milkman with ten cows.
+The resource he brings are tomatoes and cucumbers.","Ovaj čovek je stari mlekar sa deset krava.
+Resurs koji donosi su paradajz i krastavac."
+cata_bad_3,"This man is a cannibal, but he is a doctor.
+The resource he brings is that he both heals you and eats you.","Ovaj čovek je kanibal, ali on je doktor.
+Resurs koji donosi je da te i leči i jede."
+cata_bad_4,"This man is old, he never believed in physics and tested the law of gravity and as a result, villager's cow was killed.
+The resource he brings is love for physics.","Ovaj čovek je star, on nije verovao u fiziku i testirao je zakon gravitacije, što je dovelo da nastrada krava jednog seljaka.
+Resurs koji donosi je ljubav prema fizici."
+cata_bad_5,"I am the daughter Janko, I love my dog very much.","Ja sam ćerka Janko, mnogo volim svog psa."
+cata_bad_6,This man got rabies from a fox.,Ovaj čovek je dobio besnilo od lisice.
+cata_bad_7,This man won't pay the baker because the bread is stale.,Ovaj čovek neće da plati pekaru jer je hleb bajat.
+cata_bad_8,"This man is a policeman who helps the herb man bring them to his customers.
+The resource he brings is law and order, contact of the herb gentleman.","Ovaj čovek je policajac koji pomaže čoveku sa travama da ih dovede do svojih kupaca.
+Resurs koji donosi su red i mir, kontakt od gospodina sa travama."
+cata_bad_9,"This man is the herb gentleman who knows exactly what kind of herb you need. His herbs heal the brain.
+The resource he brings are pretzels.","Ovaj čovek je gospodin sa travama koji tačno zna koja ti vrsta trave treba. Njegove trave leče mozak.
+Resurs koji donosi su perece."
+cata_bad_10,"This man is a ranger in a forest where people disappear, he is trying to find them.","Ovaj čovek je šumar u šumi u kojoj nestaju ljudi, on pokušava da ih nađe."
+cata_bad_11,"This man moved to the village because he killed a man.
+The resource he brings is a dead body.","Ovaj čovek se preselio u selo jer je ubio čoveka.
+Resurs koji donosi je mrtvo telo."
+cata_bad_12,"This man is the banker in the village, but he doesn't know where the bank is.
+The resource he brings is dementia.","Ovaj čovek je banker u selu, ali ne zna gde je banka.
+Resurs koji donosi je demencija."
+cata_bad_13,"This man is Mr. Useless, probably worthless.","Ovaj čovek je gospodin čekanja, verovatno beskoristan."
+cata_bad_14,This man says the merchant sells poisoned sweets.,Ovaj čovek kaže da trgovac prodaje otrovane slatkiše.
+cata_bad_15,"This man is a kleptomaniac.
+The resource he brings are stolen animals.","Ovaj čovek je kleptomanijak.
+Resurs koji donosi su ukradene životinje. "
+cata_bad_16,"This man is an artist who draws interesting circles.
+The resource he brings is drink.","Ovaj čovek je umetnik koji crta interesantne krogove.
+Resurs koji donosi je piće."
+cata_bad_17,This man sat with the detective at the police station.,Ovaj čovek je sedeo sa detektivom u policijskoj stanici.
+cata_bad_18,"This man is a chemistry professor, his name is Wolter White.","Ovaj čovek je profesor hemije, njegovo ime je Wolter White."
+cata_bad_19,This man will leave your messages on seen.,Ovaj čovek će ti seen-ovati poruke.
+cata_bad_20,This man doesn't like Mr. Fish.,Ovaj čovek ne voli gospodina Ribu.
+greet_oldman_4,"You are in a village that will be hit by the apocalypse, you must choose who you will save with you. Not all people are the way they present themselves. Your choice matters most in your lives. You are a human, think like a human. Don't make a stupid mistake.","Nalazite se u selu u koje će doći apokalipsa, morate da izaberete koga ćete da spasite sa sobom. Nisu svi ljudi onako kako se predstavljaju. Tvoji izbor ima najviše značenje u vašim životu. Ti si čovek, misli kao čovek. Ne radi glupavu grešku."
+end_1,"Congratulations, you incompetent man, thanks to you who chose so many bad people, you are all dead.\nFirst you ran out of resources, then you became cannibals.","Čestitamo dragi nesposobni čoveče, zahvaljujući tebi koji si izabrao toliko puno loših ljudi, svi ste mrtvi.\nPrvo ste ostali bez resursa, posle ste postali kanibali."
+end_2,"You were so close to the good ending, but unfortunately you still don't know how to tell good from bad.\nThe majority is dead, you are alive and maybe someone else.","Bio si tako blizu dobrog kraja, ali nažalost i dalje ne znaš da razlikuješ dobro od lošeg.\nVećina je mrtva, ti si živ i možda još neko."
+end_3,"So, there are dead, but most of you are alive.\nYou were so close to the best ending, but oh well, we'll let you have this one and congratulate you on the good ending, but not the best.\nCongratulations, but the dead don't congratulate.","Dakle, ima mrtvih, ali većina vas je živa.\nBio si tako blizu najboljeg kraja, ali ajde pustićemo te i sa ovim i čestitati na dobrom kraju, ali ne najboljem.\nČestitamo, ali mrtvi ne čestitaju."
+end_4,"You have a sharp eye, esteemed savior, thanks to you everyone lived happily ever after.","Imaš oštro oko poštovani spasioče, zahvaljujući tebi svi su živeli srećno do kraja života."
+end_5,"Good grief, you can't walk on water or swim, but no, mister had to try and ended up right by the monster and brought doom to the village faster.\nCongratulations, this is the hidden ending, but it's still terrible.","Aman ne znaš ni da hodaš po vodi niti da plivaš, ali ne gospodin mora da proba i eto završi baš kod čudovišta i dovede propast u selo brže.\nČestitamo ovo je skriveni kraj, ali je i dalje užasan."
+greet_interacted_1,We don't have anything else to talk about.,Nemamo o čemu više da pričamo.
+greet_interacted_2,I alredy told you everything. Go talk to others.,Već sam sve rekao. Priđite drugima.
+greet_interacted_3,We had a nice talk.,Lepo smo razgovarali.
+save_interact,"Do you want to save this person (E = yes, Q = no)","Da li želiš da spasiš ovu osobu? (E = da, Q = ne)"
+bunker_interact,"Are you sure you want to go to the bunker? (E = yes, Q = no)","Da li si siguran da želiš da odeš u bunker? (E = da, Q = ne)"
+bunker_insufficient,"YOU LAZY ASS, you have 42 npc can't you chose 10 to enter a bunker!?","LENČUGO JEDNA, imaš 42 npc-ija zar ne možeš da izabereš desetoro njih da uđeš u bunker!?"
+none_saved,"Well, that was pathetic. You didn't save anyone, and even the monster looks disappointed.","Pa, ovo je bilo jadno. Nikoga nisi spasio, a čak je i čudovište razočarano."

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cp4et8emq10g3"]
+
+[ext_resource type="Texture2D" uid="uid://ctkq3dlwifms1" path="res://textures/environment/Kuca.png" id="1_d7po0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qtlar"]
+size = Vector2(130, 80)
+
+[node name="House" type="StaticBody2D" unique_id=2120823061]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=476253658]
+texture_filter = 1
+position = Vector2(0, -98)
+texture = ExtResource("1_d7po0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=314440317]
+position = Vector2(0, -40)
+shape = SubResource("RectangleShape2D_qtlar")

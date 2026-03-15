@@ -14,5 +14,5 @@ func _process(delta: float) -> void:
 
 
 func _on_timeout() -> void:
-	
+	label.add_theme_color_override("font_color", Color.DARK_RED);
 	pass # Replace with function body.

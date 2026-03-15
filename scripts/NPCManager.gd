@@ -3,14 +3,14 @@ extends Node2D
 
 @onready var npcs: Node2D = $"."
 
-var id_maximums: Array[int] = [21, 20, 0]
+var id_maximums: Array[int] = [22, 20, 4]
 var free_ids: Array[Array] = [[],[],[]]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	# Setup
 	for i in range(3):
-		for j in range(id_maximums[i]):
+		for j in range(1, id_maximums[i] + 1):
 			free_ids[i].append(j)
 	print(free_ids)
 	

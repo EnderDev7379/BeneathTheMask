@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b80iyhd4eiura"]
+
+[ext_resource type="Texture2D" uid="uid://uxfxmmqi37qk" path="res://textures/characters/grampa.png" id="1_4mtla"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4mtla"]
+size = Vector2(19, 36)
+
+[node name="Grandpa" type="StaticBody2D" unique_id=336646014]
+metadata/type = 2
+metadata/id = -1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=592753153]
+texture_filter = 1
+position = Vector2(-1.5, -18)
+texture = ExtResource("1_4mtla")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=431477360]
+position = Vector2(-1.5, -18)
+shape = SubResource("RectangleShape2D_4mtla")

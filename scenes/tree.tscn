@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vplca"]
 size = Vector2(46, 12)
 
-[node name="StaticBody2D" type="StaticBody2D" unique_id=237248103]
+[node name="Tree" type="StaticBody2D" unique_id=237248103]
 
 [node name="drvo35" type="Sprite2D" parent="." unique_id=504010560]
 texture_filter = 1

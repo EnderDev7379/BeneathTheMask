@@ -752,5 +752,5 @@ libraries/ = SubResource("AnimationLibrary_yjjk1")
 process_mode = 3
 position = Vector2(0, -10)
 shape = SubResource("RectangleShape2D_qocga")
-target_position = Vector2(0, 30)
+target_position = Vector2(0, 25)
 script = ExtResource("2_by3vp")
