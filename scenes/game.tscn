@@ -1639,7 +1639,7 @@ text = "0/10"
 
 [node name="Timer" type="Timer" parent="." unique_id=1562446566]
 process_mode = 3
-wait_time = 10.0
+wait_time = 2400.0
 one_shot = true
 autostart = true
 script = ExtResource("12_pl11u")
