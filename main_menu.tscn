@@ -21,8 +21,6 @@ offset_top = 75.0
 offset_right = 771.0
 offset_bottom = 139.0
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=541487010]
-position = Vector2(576, 324)
 [node name="StartButton" type="TextureButton" parent="." unique_id=2014845393]
 layout_mode = 1
 anchors_preset = -1

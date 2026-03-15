@@ -154,6 +154,7 @@ script = ExtResource("4_hve3p")
 
 [node name="TopDownPlayer" parent="Environment" unique_id=2027909478 instance=ExtResource("9_hve3p")]
 position = Vector2(261, 232)
+CAMERA_ZOOM = 2
 CAMERA_DELAY = 4
 direction_mode = 0
 primary_direction = 1
