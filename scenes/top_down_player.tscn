@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c86tdgl42lx1w"]
 
-[ext_resource type="Script" uid="uid://b16fcm2j8uapo" path="res://top_down_player.gd" id="1_qjmy6"]
-[ext_resource type="Script" uid="uid://wxurhjkq2tkq" path="res://interaction.gd" id="2_by3vp"]
+[ext_resource type="Script" uid="uid://b16fcm2j8uapo" path="res://scripts/top_down_player.gd" id="1_qjmy6"]
+[ext_resource type="Script" uid="uid://wxurhjkq2tkq" path="res://scripts/interaction.gd" id="2_by3vp"]
 [ext_resource type="Texture2D" uid="uid://baulhlad7lmj4" path="res://textures/characters/player/GlavniLikSpritesheet.png" id="2_qocga"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_by3vp"]

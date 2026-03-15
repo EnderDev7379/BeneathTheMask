@@ -10,7 +10,7 @@ var interaction_stage = 0;
 
 const dialogues: Array[Array] = [
 	[
-"Zdravo spasioče,  hvala ti što možeš da nam pomogneš.",
+"Zdravo spasioče, hvala ti što možeš da nam pomogneš.",
 "Zdravo, oćeš na kafu.",
 "Šta si došao kod nas? Zar ne znaš da dolazi propast u ovo selo, odlazi odavde!!!"
 	],
@@ -110,7 +110,7 @@ Resurs koji donosi je sveta piće.",
 
 "Ovaj čovek će ti seen-ovati poruke.",
 
-"Ovaj čovekne voli gospodina Ribu.",
+"Ovaj čovek ne voli gospodina Ribu.",
 
 "Ovaj čovek se preselio u selo jer je ubio čoveka.
 Resurs koji donosi je mrtvo telo."

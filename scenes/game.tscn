@@ -1,22 +1,21 @@
 [gd_scene format=4 uid="uid://cm5a8n2m5t3np"]
 
-[ext_resource type="Texture2D" uid="uid://dojl2fmpfybc" path="res://textures/tiles/TileSet.png" id="1_fc0e3"]
-[ext_resource type="PackedScene" uid="uid://0tpwuyg6i6p8" path="res://npc.tscn" id="3_feb5d"]
-[ext_resource type="Script" uid="uid://gc2i37l0abvy" path="res://CollisionMaker.gd" id="4_hve3p"]
-[ext_resource type="FontFile" uid="uid://v5c1b5d5a70p" path="res://PixelifySans-VariableFont_wght.ttf" id="5_7jktm"]
-[ext_resource type="Script" uid="uid://m51xxy7h076u" path="res://NPCManager.gd" id="5_eow3j"]
-[ext_resource type="Texture2D" uid="uid://cuorhq4ift4kn" path="res://textures/environment/kucakojaserap.png" id="7_215e1"]
-[ext_resource type="Texture2D" uid="uid://cq4thvb2abv3t" path="res://textures/environment/House.png" id="7_eow3j"]
-[ext_resource type="Texture2D" uid="uid://8od1plxhkcny" path="res://textures/environment/Tree.png" id="8_j5wjh"]
-[ext_resource type="PackedScene" uid="uid://c86tdgl42lx1w" path="res://top_down_player.tscn" id="9_hve3p"]
-[ext_resource type="Texture2D" uid="uid://b7cr7pwvjtdud" path="res://textures/environment/Fountain.png" id="9_vef74"]
-[ext_resource type="Texture2D" uid="uid://f82rr6e21i5k" path="res://textures/environment/BunkerDoor.png" id="10_hve3p"]
-[ext_resource type="Script" uid="uid://da2vehsiegg4f" path="res://timer.gd" id="10_mfdv2"]
-[ext_resource type="AudioStream" uid="uid://bthyoi6mh37ij" path="res://music/music01.wav" id="12_iotsf"]
-[ext_resource type="Script" uid="uid://dmnah7yq2jii1" path="res://audio_stream_player.gd" id="13_lc2xo"]
+[ext_resource type="Texture2D" uid="uid://dojl2fmpfybc" path="res://textures/tiles/TileSet.png" id="1_trtic"]
+[ext_resource type="Script" uid="uid://m51xxy7h076u" path="res://scripts/NPCManager.gd" id="2_ir15t"]
+[ext_resource type="PackedScene" uid="uid://0tpwuyg6i6p8" path="res://scenes/npc.tscn" id="3_ca42v"]
+[ext_resource type="PackedScene" uid="uid://c86tdgl42lx1w" path="res://scenes/top_down_player.tscn" id="5_ssvqc"]
+[ext_resource type="Texture2D" uid="uid://cuorhq4ift4kn" path="res://textures/environment/kucakojaserap.png" id="6_264po"]
+[ext_resource type="Texture2D" uid="uid://cq4thvb2abv3t" path="res://textures/environment/House.png" id="7_1kice"]
+[ext_resource type="Texture2D" uid="uid://b7cr7pwvjtdud" path="res://textures/environment/Fountain.png" id="8_5newe"]
+[ext_resource type="PackedScene" uid="uid://dr6gqyty42nmd" path="res://scenes/tree.tscn" id="8_kvuet"]
+[ext_resource type="Texture2D" uid="uid://f82rr6e21i5k" path="res://textures/environment/BunkerDoor.png" id="10_bt5mj"]
+[ext_resource type="FontFile" uid="uid://v5c1b5d5a70p" path="res://PixelifySans-VariableFont_wght.ttf" id="11_e1j6l"]
+[ext_resource type="Script" uid="uid://da2vehsiegg4f" path="res://scripts/timer.gd" id="12_pl11u"]
+[ext_resource type="AudioStream" uid="uid://bthyoi6mh37ij" path="res://music/music01.wav" id="13_bhx41"]
+[ext_resource type="Script" uid="uid://dmnah7yq2jii1" path="res://scripts/audio_stream_player.gd" id="14_qnb83"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7jktm"]
-texture = ExtResource("1_fc0e3")
+texture = ExtResource("1_trtic")
 texture_region_size = Vector2i(20, 20)
 0:0/0 = 0
 1:0/0 = 0
@@ -70,89 +69,88 @@ tile_set = SubResource("TileSet_mwb40")
 [node name="Sprite2D" type="Sprite2D" parent="TileMapLayer" unique_id=916350533]
 
 [node name="Npcs" type="Node2D" parent="." unique_id=590416268]
-script = ExtResource("5_eow3j")
+script = ExtResource("2_ir15t")
 
-[node name="NPC1" parent="Npcs" unique_id=1067107293 instance=ExtResource("3_feb5d")]
+[node name="NPC1" parent="Npcs" unique_id=1067107293 instance=ExtResource("3_ca42v")]
 position = Vector2(-1170, -567)
 
-[node name="NPC2" parent="Npcs" unique_id=1773709082 instance=ExtResource("3_feb5d")]
+[node name="NPC2" parent="Npcs" unique_id=1773709082 instance=ExtResource("3_ca42v")]
 position = Vector2(-859, -1707)
 
-[node name="NPC3" parent="Npcs" unique_id=1967496799 instance=ExtResource("3_feb5d")]
+[node name="NPC3" parent="Npcs" unique_id=1967496799 instance=ExtResource("3_ca42v")]
 position = Vector2(784, -1926)
 
-[node name="NPC4" parent="Npcs" unique_id=1709855148 instance=ExtResource("3_feb5d")]
+[node name="NPC4" parent="Npcs" unique_id=1709855148 instance=ExtResource("3_ca42v")]
 position = Vector2(-1944, -1696)
 
-[node name="NPC5" parent="Npcs" unique_id=681519379 instance=ExtResource("3_feb5d")]
+[node name="NPC5" parent="Npcs" unique_id=681519379 instance=ExtResource("3_ca42v")]
 position = Vector2(-2053, -2129)
 
-[node name="NPC6" parent="Npcs" unique_id=1766907374 instance=ExtResource("3_feb5d")]
+[node name="NPC6" parent="Npcs" unique_id=1766907374 instance=ExtResource("3_ca42v")]
 position = Vector2(-986, -2755)
 
-[node name="NPC7" parent="Npcs" unique_id=1578248680 instance=ExtResource("3_feb5d")]
-position = Vector2(-227, -3348)
+[node name="NPC7" parent="Npcs" unique_id=1578248680 instance=ExtResource("3_ca42v")]
+position = Vector2(-195, -3266)
 
-[node name="NPC8" parent="Npcs" unique_id=916082616 instance=ExtResource("3_feb5d")]
+[node name="NPC8" parent="Npcs" unique_id=916082616 instance=ExtResource("3_ca42v")]
 position = Vector2(1604, -2670)
 
-[node name="NPC9" parent="Npcs" unique_id=807154193 instance=ExtResource("3_feb5d")]
+[node name="NPC9" parent="Npcs" unique_id=807154193 instance=ExtResource("3_ca42v")]
 position = Vector2(1615, -1789)
 
-[node name="NPC10" parent="Npcs" unique_id=2050352351 instance=ExtResource("3_feb5d")]
+[node name="NPC10" parent="Npcs" unique_id=2050352351 instance=ExtResource("3_ca42v")]
 position = Vector2(1361, -938)
 
-[node name="NPC11" parent="Npcs" unique_id=1057482895 instance=ExtResource("3_feb5d")]
+[node name="NPC11" parent="Npcs" unique_id=1057482895 instance=ExtResource("3_ca42v")]
 position = Vector2(1970, -133)
 
-[node name="NPC12" parent="Npcs" unique_id=1886600839 instance=ExtResource("3_feb5d")]
+[node name="NPC12" parent="Npcs" unique_id=1886600839 instance=ExtResource("3_ca42v")]
 position = Vector2(2090, -1066)
 metadata/id = 7
 metadata/type = 1
 
-[node name="NPC13" parent="Npcs" unique_id=1887174415 instance=ExtResource("3_feb5d")]
+[node name="NPC13" parent="Npcs" unique_id=1887174415 instance=ExtResource("3_ca42v")]
 position = Vector2(2486, -1547)
 
-[node name="NPC14" parent="Npcs" unique_id=1000408367 instance=ExtResource("3_feb5d")]
-position = Vector2(304, -3620)
+[node name="NPC14" parent="Npcs" unique_id=1000408367 instance=ExtResource("3_ca42v")]
+position = Vector2(366, -3561)
 
-[node name="NPC15" parent="Npcs" unique_id=2018484977 instance=ExtResource("3_feb5d")]
-position = Vector2(458, -3770)
+[node name="NPC15" parent="Npcs" unique_id=2018484977 instance=ExtResource("3_ca42v")]
+position = Vector2(395, -3561)
 
-[node name="NPC16" parent="Npcs" unique_id=1241673717 instance=ExtResource("3_feb5d")]
-position = Vector2(344, -4075)
+[node name="NPC16" parent="Npcs" unique_id=1241673717 instance=ExtResource("3_ca42v")]
+position = Vector2(-250, -2369)
 
-[node name="NPC17" parent="Npcs" unique_id=1046994977 instance=ExtResource("3_feb5d")]
+[node name="NPC17" parent="Npcs" unique_id=1046994977 instance=ExtResource("3_ca42v")]
 position = Vector2(2819, -2909)
 
-[node name="NPC18" parent="Npcs" unique_id=556726460 instance=ExtResource("3_feb5d")]
+[node name="NPC18" parent="Npcs" unique_id=556726460 instance=ExtResource("3_ca42v")]
 position = Vector2(2843, -2858)
 
-[node name="NPC19" parent="Npcs" unique_id=611274 instance=ExtResource("3_feb5d")]
-position = Vector2(414.99997, 166.99998)
+[node name="NPC19" parent="Npcs" unique_id=611274 instance=ExtResource("3_ca42v")]
+position = Vector2(-231.00003, -2241)
 
-[node name="NPC20" parent="Npcs" unique_id=366220695 instance=ExtResource("3_feb5d")]
-position = Vector2(296, 73)
+[node name="NPC20" parent="Npcs" unique_id=366220695 instance=ExtResource("3_ca42v")]
+position = Vector2(-57, -2260)
 
-[node name="NPC21" parent="Npcs" unique_id=1624257446 instance=ExtResource("3_feb5d")]
-position = Vector2(103.99999, 231.99998)
+[node name="NPC21" parent="Npcs" unique_id=1624257446 instance=ExtResource("3_ca42v")]
+position = Vector2(-249, -3266)
 
-[node name="NPC22" parent="Npcs" unique_id=330314196 instance=ExtResource("3_feb5d")]
+[node name="NPC22" parent="Npcs" unique_id=330314196 instance=ExtResource("3_ca42v")]
 position = Vector2(-2268, -1236)
 
-[node name="NPC23" parent="Npcs" unique_id=1152530051 instance=ExtResource("3_feb5d")]
+[node name="NPC23" parent="Npcs" unique_id=1152530051 instance=ExtResource("3_ca42v")]
 position = Vector2(-1636, -929)
 
-[node name="NPC24" parent="Npcs" unique_id=412485937 instance=ExtResource("3_feb5d")]
+[node name="NPC24" parent="Npcs" unique_id=412485937 instance=ExtResource("3_ca42v")]
 position = Vector2(2118, -1066)
 metadata/id = 8
 metadata/type = 1
 
 [node name="Environment" type="Node2D" parent="." unique_id=465240701]
 y_sort_enabled = true
-script = ExtResource("4_hve3p")
 
-[node name="TopDownPlayer" parent="Environment" unique_id=2027909478 instance=ExtResource("9_hve3p")]
+[node name="TopDownPlayer" parent="Environment" unique_id=2027909478 instance=ExtResource("5_ssvqc")]
 position = Vector2(261, 232)
 CAMERA_ZOOM = 2
 CAMERA_DELAY = 4
@@ -162,7 +160,7 @@ primary_direction = 1
 [node name="Kucakojaserap" type="Sprite2D" parent="Environment" unique_id=559885429]
 texture_filter = 1
 position = Vector2(2065, -1153)
-texture = ExtResource("7_215e1")
+texture = ExtResource("6_264po")
 
 [node name="House" type="StaticBody2D" parent="Environment" unique_id=132779651]
 position = Vector2(-809, -1730)
@@ -171,7 +169,7 @@ position = Vector2(-809, -1730)
 texture_filter = 1
 position = Vector2(0, -102)
 scale = Vector2(4.555002, 3.5924969)
-texture = ExtResource("7_eow3j")
+texture = ExtResource("7_1kice")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/House" unique_id=459677279]
 position = Vector2(0, -33.5)
@@ -184,7 +182,7 @@ position = Vector2(-1203, -586)
 texture_filter = 1
 position = Vector2(0, -102)
 scale = Vector2(4.555002, 3.5924969)
-texture = ExtResource("7_eow3j")
+texture = ExtResource("7_1kice")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/House2" unique_id=845832144]
 position = Vector2(0, -33.5)
@@ -197,7 +195,7 @@ position = Vector2(-1657, -950)
 texture_filter = 1
 position = Vector2(0, -102)
 scale = Vector2(4.555002, 3.5924969)
-texture = ExtResource("7_eow3j")
+texture = ExtResource("7_1kice")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/House3" unique_id=175420802]
 position = Vector2(0, -33.5)
@@ -210,7 +208,7 @@ position = Vector2(-2279, -1262)
 texture_filter = 1
 position = Vector2(0, -102)
 scale = Vector2(4.555002, 3.5924969)
-texture = ExtResource("7_eow3j")
+texture = ExtResource("7_1kice")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/House4" unique_id=1598830287]
 position = Vector2(0, -33.5)
@@ -223,7 +221,7 @@ position = Vector2(-1961, -1723)
 texture_filter = 1
 position = Vector2(0, -102)
 scale = Vector2(4.555002, 3.5924969)
-texture = ExtResource("7_eow3j")
+texture = ExtResource("7_1kice")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/House5" unique_id=650508020]
 position = Vector2(0, -33.5)
@@ -236,7 +234,7 @@ position = Vector2(-2030, -2151)
 texture_filter = 1
 position = Vector2(0, -102)
 scale = Vector2(4.555002, 3.5924969)
-texture = ExtResource("7_eow3j")
+texture = ExtResource("7_1kice")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/House6" unique_id=405734681]
 position = Vector2(0, -33.5)
@@ -249,7 +247,7 @@ position = Vector2(-949, -2788)
 texture_filter = 1
 position = Vector2(0, -102)
 scale = Vector2(4.555002, 3.5924969)
-texture = ExtResource("7_eow3j")
+texture = ExtResource("7_1kice")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/House7" unique_id=1728386344]
 position = Vector2(0, -33.5)
@@ -262,7 +260,7 @@ position = Vector2(-205, -3291)
 texture_filter = 1
 position = Vector2(0, -102)
 scale = Vector2(4.555002, 3.5924969)
-texture = ExtResource("7_eow3j")
+texture = ExtResource("7_1kice")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/House8" unique_id=1467374453]
 position = Vector2(0, -33.5)
@@ -275,7 +273,7 @@ position = Vector2(1588, -2614)
 texture_filter = 1
 position = Vector2(0, -102)
 scale = Vector2(4.555002, 3.5924969)
-texture = ExtResource("7_eow3j")
+texture = ExtResource("7_1kice")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/House9" unique_id=478268202]
 position = Vector2(0, -33.5)
@@ -288,7 +286,7 @@ position = Vector2(819, -1948)
 texture_filter = 1
 position = Vector2(0, -102)
 scale = Vector2(4.555002, 3.5924969)
-texture = ExtResource("7_eow3j")
+texture = ExtResource("7_1kice")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/House10" unique_id=1445972353]
 position = Vector2(0, -33.5)
@@ -301,7 +299,7 @@ position = Vector2(1629, -1814)
 texture_filter = 1
 position = Vector2(0, -102)
 scale = Vector2(4.555002, 3.5924969)
-texture = ExtResource("7_eow3j")
+texture = ExtResource("7_1kice")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/House11" unique_id=1842914838]
 position = Vector2(0, -33.5)
@@ -314,7 +312,7 @@ position = Vector2(2488, -1580)
 texture_filter = 1
 position = Vector2(0, -102)
 scale = Vector2(4.555002, 3.5924969)
-texture = ExtResource("7_eow3j")
+texture = ExtResource("7_1kice")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/House12" unique_id=252025887]
 position = Vector2(0, -33.5)
@@ -327,7 +325,7 @@ position = Vector2(1398, -959)
 texture_filter = 1
 position = Vector2(0, -102)
 scale = Vector2(4.555002, 3.5924969)
-texture = ExtResource("7_eow3j")
+texture = ExtResource("7_1kice")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/House13" unique_id=1987029411]
 position = Vector2(0, -33.5)
@@ -340,7 +338,7 @@ position = Vector2(2779, -520)
 texture_filter = 1
 position = Vector2(0, -102)
 scale = Vector2(4.555002, 3.5924969)
-texture = ExtResource("7_eow3j")
+texture = ExtResource("7_1kice")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/House14" unique_id=1315085049]
 position = Vector2(0, -33.5)
@@ -353,7 +351,7 @@ position = Vector2(1998, -158)
 texture_filter = 1
 position = Vector2(0, -102)
 scale = Vector2(4.555002, 3.5924969)
-texture = ExtResource("7_eow3j")
+texture = ExtResource("7_1kice")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/House15" unique_id=64174266]
 position = Vector2(0, -33.5)
@@ -366,294 +364,154 @@ position = Vector2(-166, -2307)
 texture_filter = 1
 position = Vector2(0, -52.000122)
 scale = Vector2(4.85, 4.53)
-texture = ExtResource("9_vef74")
+texture = ExtResource("8_5newe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Fountain" unique_id=1322104677]
 rotation = -1.5707964
 shape = SubResource("CapsuleShape2D_215e1")
 
-[node name="Trees" type="Node" parent="." unique_id=998388713]
+[node name="Tree" parent="Environment" unique_id=237248103 instance=ExtResource("8_kvuet")]
+position = Vector2(-303, -39)
 
-[node name="drvo" type="Sprite2D" parent="Trees" unique_id=1543682955]
-texture_filter = 1
-position = Vector2(-1394.5, -602)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree2" parent="Environment" unique_id=169694012 instance=ExtResource("8_kvuet")]
+position = Vector2(-65, -281)
 
-[node name="drvo2" type="Sprite2D" parent="Trees" unique_id=1922300653]
-texture_filter = 1
-position = Vector2(-1069.0001, -770)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree3" parent="Environment" unique_id=909293263 instance=ExtResource("8_kvuet")]
+position = Vector2(-559, -486)
 
-[node name="drvo3" type="Sprite2D" parent="Trees" unique_id=1041335317]
-texture_filter = 1
-position = Vector2(-303.00018, -108.00006)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree4" parent="Environment" unique_id=1810053945 instance=ExtResource("8_kvuet")]
+position = Vector2(-1394, -531)
 
-[node name="drvo4" type="Sprite2D" parent="Trees" unique_id=1766457355]
-texture_filter = 1
-position = Vector2(-66.000015, -351.99997)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree5" parent="Environment" unique_id=440336505 instance=ExtResource("8_kvuet")]
+position = Vector2(-1072, -699)
 
-[node name="drvo5" type="Sprite2D" parent="Trees" unique_id=1078704352]
-texture_filter = 1
-position = Vector2(1189.0001, -999.00006)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree6" parent="Environment" unique_id=1882720284 instance=ExtResource("8_kvuet")]
+position = Vector2(-1091, -1037)
 
-[node name="drvo6" type="Sprite2D" parent="Trees" unique_id=1390968245]
-texture_filter = 1
-position = Vector2(-646.99976, -1758)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree7" parent="Environment" unique_id=9264409 instance=ExtResource("8_kvuet")]
+position = Vector2(-305, -949)
 
-[node name="drvo7" type="Sprite2D" parent="Trees" unique_id=507217034]
-texture_filter = 1
-position = Vector2(-1315, -1497.0001)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree8" parent="Environment" unique_id=1439205824 instance=ExtResource("8_kvuet")]
+position = Vector2(-1315, -1427)
 
-[node name="drvo8" type="Sprite2D" parent="Trees" unique_id=409694935]
-texture_filter = 1
-position = Vector2(-2131, -1700)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree9" parent="Environment" unique_id=113175320 instance=ExtResource("8_kvuet")]
+position = Vector2(-2132, -1628)
 
-[node name="drvo9" type="Sprite2D" parent="Trees" unique_id=133011877]
-texture_filter = 1
-position = Vector2(-1807.0002, -2506)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree10" parent="Environment" unique_id=209918037 instance=ExtResource("8_kvuet")]
+position = Vector2(-649, -1687)
 
-[node name="drvo10" type="Sprite2D" parent="Trees" unique_id=1020184908]
-texture_filter = 1
-position = Vector2(-1646.0001, -2514)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree11" parent="Environment" unique_id=663740520 instance=ExtResource("8_kvuet")]
+position = Vector2(-42, -1863)
 
-[node name="drvo11" type="Sprite2D" parent="Trees" unique_id=1128134827]
-texture_filter = 1
-position = Vector2(-1455, -2517)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree12" parent="Environment" unique_id=716529549 instance=ExtResource("8_kvuet")]
+position = Vector2(-1805, -2434)
 
-[node name="drvo12" type="Sprite2D" parent="Trees" unique_id=1518205371]
-texture_filter = 1
-position = Vector2(-585.00006, -3363.9995)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree13" parent="Environment" unique_id=1641678878 instance=ExtResource("8_kvuet")]
+position = Vector2(-1648, -2444)
 
-[node name="drvo13" type="Sprite2D" parent="Trees" unique_id=427393070]
-texture_filter = 1
-position = Vector2(284.99994, -3400)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree14" parent="Environment" unique_id=1115740134 instance=ExtResource("8_kvuet")]
+position = Vector2(-1454, -2447)
 
-[node name="drvo14" type="Sprite2D" parent="Trees" unique_id=755515136]
-texture_filter = 1
-position = Vector2(149.00002, -2772.0002)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree15" parent="Environment" unique_id=866385686 instance=ExtResource("8_kvuet")]
+position = Vector2(-291, -2602)
 
-[node name="drvo35" type="Sprite2D" parent="Trees" unique_id=607143924]
-texture_filter = 1
-position = Vector2(-288.99994, -2667.9998)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree16" parent="Environment" unique_id=1641644077 instance=ExtResource("8_kvuet")]
+position = Vector2(175, -2374)
 
-[node name="drvo36" type="Sprite2D" parent="Trees" unique_id=594944413]
-texture_filter = 1
-position = Vector2(-1151, -3109)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree17" parent="Environment" unique_id=1389603646 instance=ExtResource("8_kvuet")]
+position = Vector2(151, -2704)
 
-[node name="drvo37" type="Sprite2D" parent="Trees" unique_id=598909101]
-texture_filter = 1
-position = Vector2(850.9999, -3884)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree18" parent="Environment" unique_id=1725060459 instance=ExtResource("8_kvuet")]
+position = Vector2(595, -2774)
 
-[node name="drvo38" type="Sprite2D" parent="Trees" unique_id=417144012]
-texture_filter = 1
-position = Vector2(143.00012, -4058.0002)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree19" parent="Environment" unique_id=1580962907 instance=ExtResource("8_kvuet")]
+position = Vector2(1091, -2856)
 
-[node name="drvo39" type="Sprite2D" parent="Trees" unique_id=1533055150]
-texture_filter = 1
-position = Vector2(-571.99994, -3971)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree20" parent="Environment" unique_id=1540340526 instance=ExtResource("8_kvuet")]
+position = Vector2(1316, -3360)
 
-[node name="drvo40" type="Sprite2D" parent="Trees" unique_id=1377632268]
-texture_filter = 1
-position = Vector2(760.99994, -3359)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree21" parent="Environment" unique_id=1458558931 instance=ExtResource("8_kvuet")]
+position = Vector2(762, -3289)
 
-[node name="drvo41" type="Sprite2D" parent="Trees" unique_id=1083524057]
-texture_filter = 1
-position = Vector2(597, -2844.0002)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree22" parent="Environment" unique_id=289523980 instance=ExtResource("8_kvuet")]
+position = Vector2(286, -3331)
 
-[node name="drvo42" type="Sprite2D" parent="Trees" unique_id=1060807366]
-texture_filter = 1
-position = Vector2(1315, -3429)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree23" parent="Environment" unique_id=464609202 instance=ExtResource("8_kvuet")]
+position = Vector2(-582, -3294)
 
-[node name="drvo43" type="Sprite2D" parent="Trees" unique_id=1604613802]
-texture_filter = 1
-position = Vector2(1676, -3940)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree24" parent="Environment" unique_id=1347545720 instance=ExtResource("8_kvuet")]
+position = Vector2(-1147, -3045)
 
-[node name="drvo44" type="Sprite2D" parent="Trees" unique_id=956939646]
-texture_filter = 1
-position = Vector2(1091, -2927.0005)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree25" parent="Environment" unique_id=1411434641 instance=ExtResource("8_kvuet")]
+position = Vector2(-868, -3623)
 
-[node name="drvo45" type="Sprite2D" parent="Trees" unique_id=169687768]
-texture_filter = 1
-position = Vector2(1124, -4327)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree26" parent="Environment" unique_id=2062156532 instance=ExtResource("8_kvuet")]
+position = Vector2(-572, -3902)
 
-[node name="drvo46" type="Sprite2D" parent="Trees" unique_id=718153829]
-texture_filter = 1
-position = Vector2(-871.9999, -3695)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree27" parent="Environment" unique_id=1082086186 instance=ExtResource("8_kvuet")]
+position = Vector2(144, -3988)
 
-[node name="drvo15" type="Sprite2D" parent="Trees" unique_id=1809143639]
-texture_filter = 1
-position = Vector2(173.00002, -2445.9998)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree28" parent="Environment" unique_id=1980841200 instance=ExtResource("8_kvuet")]
+position = Vector2(1125, -4262)
 
-[node name="drvo16" type="Sprite2D" parent="Trees" unique_id=418664817]
-texture_filter = 1
-position = Vector2(643, -1971)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree29" parent="Environment" unique_id=759064856 instance=ExtResource("8_kvuet")]
+position = Vector2(855, -3816)
 
-[node name="drvo17" type="Sprite2D" parent="Trees" unique_id=1027451401]
-texture_filter = 1
-position = Vector2(1314, -1616.0001)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree30" parent="Environment" unique_id=1863091506 instance=ExtResource("8_kvuet")]
+position = Vector2(1674, -3868)
 
-[node name="drvo18" type="Sprite2D" parent="Trees" unique_id=591920109]
-texture_filter = 1
-position = Vector2(1704.0001, -1522)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree31" parent="Environment" unique_id=1836455262 instance=ExtResource("8_kvuet")]
+position = Vector2(1807, -2732)
 
-[node name="drvo19" type="Sprite2D" parent="Trees" unique_id=1912002931]
-texture_filter = 1
-position = Vector2(-41.999878, -1934.9998)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree32" parent="Environment" unique_id=1626538203 instance=ExtResource("8_kvuet")]
+position = Vector2(1575, -2234)
 
-[node name="drvo20" type="Sprite2D" parent="Trees" unique_id=814652139]
-texture_filter = 1
-position = Vector2(1809.9999, -2802)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree33" parent="Environment" unique_id=1306212061 instance=ExtResource("8_kvuet")]
+position = Vector2(645, -1904)
 
-[node name="drvo21" type="Sprite2D" parent="Trees" unique_id=1445250412]
-texture_filter = 1
-position = Vector2(2706, -1525.0001)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree34" parent="Environment" unique_id=682038121 instance=ExtResource("8_kvuet")]
+position = Vector2(2132, -2007)
 
-[node name="drvo22" type="Sprite2D" parent="Trees" unique_id=131067794]
-texture_filter = 1
-position = Vector2(2221, -1114)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree35" parent="Environment" unique_id=2097446209 instance=ExtResource("8_kvuet")]
+position = Vector2(640, -1304)
 
-[node name="drvo23" type="Sprite2D" parent="Trees" unique_id=1311860632]
-texture_filter = 1
-position = Vector2(2131.0002, -2076)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree36" parent="Environment" unique_id=2052783679 instance=ExtResource("8_kvuet")]
+position = Vector2(1313, -1552)
 
-[node name="drvo24" type="Sprite2D" parent="Trees" unique_id=1850286742]
-texture_filter = 1
-position = Vector2(1573, -2303)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree37" parent="Environment" unique_id=1039015761 instance=ExtResource("8_kvuet")]
+position = Vector2(2064, -1664)
 
-[node name="drvo25" type="Sprite2D" parent="Trees" unique_id=496388833]
-texture_filter = 1
-position = Vector2(2068, -1732)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree38" parent="Environment" unique_id=993483457 instance=ExtResource("8_kvuet")]
+position = Vector2(1704, -1458)
 
-[node name="drvo26" type="Sprite2D" parent="Trees" unique_id=1734673651]
-texture_filter = 1
-position = Vector2(641.00037, -1371.0001)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree39" parent="Environment" unique_id=1932755368 instance=ExtResource("8_kvuet")]
+position = Vector2(2703, -1458)
 
-[node name="drvo27" type="Sprite2D" parent="Trees" unique_id=1265010094]
-texture_filter = 1
-position = Vector2(3014, -1057)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree40" parent="Environment" unique_id=441360586 instance=ExtResource("8_kvuet")]
+position = Vector2(3011, -991)
 
-[node name="drvo28" type="Sprite2D" parent="Trees" unique_id=419677533]
-texture_filter = 1
-position = Vector2(2339.0002, -467.00006)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree41" parent="Environment" unique_id=1683383995 instance=ExtResource("8_kvuet")]
+position = Vector2(2222, -1046)
 
-[node name="drvo29" type="Sprite2D" parent="Trees" unique_id=606401766]
-texture_filter = 1
-position = Vector2(1604, -376)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree42" parent="Environment" unique_id=1402125398 instance=ExtResource("8_kvuet")]
+position = Vector2(1186, -929)
 
-[node name="drvo30" type="Sprite2D" parent="Trees" unique_id=1645669430]
-texture_filter = 1
-position = Vector2(-303.99988, -1016.99994)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree43" parent="Environment" unique_id=1459379001 instance=ExtResource("8_kvuet")]
+position = Vector2(1929, -652)
 
-[node name="drvo31" type="Sprite2D" parent="Trees" unique_id=1071561328]
-texture_filter = 1
-position = Vector2(-1091, -1105)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree44" parent="Environment" unique_id=1808595299 instance=ExtResource("8_kvuet")]
+position = Vector2(1607, -311)
 
-[node name="drvo32" type="Sprite2D" parent="Trees" unique_id=1448265067]
-texture_filter = 1
-position = Vector2(661.9999, -476.00006)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree45" parent="Environment" unique_id=1496610784 instance=ExtResource("8_kvuet")]
+position = Vector2(2339, -402)
 
-[node name="drvo33" type="Sprite2D" parent="Trees" unique_id=1150626527]
-texture_filter = 1
-position = Vector2(-558.99976, -555)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
-
-[node name="drvo34" type="Sprite2D" parent="Trees" unique_id=1604728759]
-texture_filter = 1
-position = Vector2(1928.9998, -718)
-scale = Vector2(1.5700006, 2.0799992)
-texture = ExtResource("8_j5wjh")
+[node name="Tree46" parent="Environment" unique_id=433726281 instance=ExtResource("8_kvuet")]
+position = Vector2(661, -403)
 
 [node name="bunker" type="Sprite2D" parent="." unique_id=699965453]
 texture_filter = 1
 position = Vector2(388, -4252)
-texture = ExtResource("10_hve3p")
+texture = ExtResource("10_bt5mj")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1150132305]
 
@@ -669,7 +527,7 @@ offset_right = 1152.0
 offset_bottom = 67.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(7.757335, 7.757335, 7.757335, 1)
-theme_override_fonts/font = ExtResource("5_7jktm")
+theme_override_fonts/font = ExtResource("11_e1j6l")
 theme_override_font_sizes/font_size = 48
 text = "test"
 autowrap_mode = 2
@@ -684,13 +542,13 @@ process_mode = 3
 wait_time = 2400.0
 one_shot = true
 autostart = true
-script = ExtResource("10_mfdv2")
+script = ExtResource("12_pl11u")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1892989832]
 process_mode = 3
-stream = ExtResource("12_iotsf")
+stream = ExtResource("13_bhx41")
 volume_db = -20.0
 autoplay = true
-script = ExtResource("13_lc2xo")
+script = ExtResource("14_qnb83")
 
 [connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]
