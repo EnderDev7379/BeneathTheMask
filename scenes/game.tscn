@@ -16,6 +16,7 @@
 [ext_resource type="AudioStream" uid="uid://bthyoi6mh37ij" path="res://music/music01.wav" id="13_bhx41"]
 [ext_resource type="Script" uid="uid://dmnah7yq2jii1" path="res://scripts/audio_stream_player.gd" id="14_qnb83"]
 [ext_resource type="PackedScene" uid="uid://b80iyhd4eiura" path="res://scenes/grandpa.tscn" id="15_ir15t"]
+[ext_resource type="Script" uid="uid://cvpvafyyunucu" path="res://scenes/area_2d.gd" id="17_rysoc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7jktm"]
 texture = ExtResource("1_trtic")
@@ -71,6 +72,12 @@ height = 191.99998
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ca42v"]
 size = Vector2(46, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ssvqc"]
+size = Vector2(2789, 269)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_264po"]
+size = Vector2(571, 1933)
 
 [node name="Game" type="Node2D" unique_id=1308360868]
 
@@ -1624,9 +1631,15 @@ theme_override_font_sizes/font_size = 48
 text = "40:00.000"
 horizontal_alignment = 1
 
+[node name="Label2" type="Label" parent="CanvasLayer" unique_id=720105387]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 40
+text = "0/10"
+
 [node name="Timer" type="Timer" parent="." unique_id=1562446566]
 process_mode = 3
-wait_time = 1800.0
+wait_time = 10.0
 one_shot = true
 autostart = true
 script = ExtResource("12_pl11u")
@@ -1638,4 +1651,17 @@ volume_db = -20.0
 autoplay = true
 script = ExtResource("14_qnb83")
 
+[node name="Area2D" type="Area2D" parent="." unique_id=335514868]
+position = Vector2(5599, -4151)
+script = ExtResource("17_rysoc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1363252086]
+position = Vector2(-960.5, 124.5)
+shape = SubResource("RectangleShape2D_ssvqc")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=496430142]
+position = Vector2(189.5, 956.5)
+shape = SubResource("RectangleShape2D_264po")
+
 [connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

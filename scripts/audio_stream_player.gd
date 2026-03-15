@@ -6,8 +6,3 @@ extends AudioStreamPlayer
 func _ready() -> void:
 	audio_stream_player.stream = load("res://music/music01.wav") if randi_range(0, 1) else load("res://music/music02.wav");
 	audio_stream_player.play();
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
