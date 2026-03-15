@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dojl2fmpfybc"
-path="res://.godot/imported/Untitled.png-30da513a925d9064453decddf41ecbd4.ctex"
+uid="uid://cuorhq4ift4kn"
+path="res://.godot/imported/kucakojaserap.png-35d856138d0373f02662f8e5c0336eaf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Untitled.png"
-dest_files=["res://.godot/imported/Untitled.png-30da513a925d9064453decddf41ecbd4.ctex"]
+source_file="res://textures/environment/kucakojaserap.png"
+dest_files=["res://.godot/imported/kucakojaserap.png-35d856138d0373f02662f8e5c0336eaf.ctex"]
 
 [params]
 

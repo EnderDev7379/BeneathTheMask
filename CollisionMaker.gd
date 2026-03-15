@@ -4,7 +4,9 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	for sprite: Sprite2D in root.get_children():
+	return;
+	for sprite in root.get_children():
+		if !(sprite is Sprite2D): continue;
 		var staticBody: StaticBody2D = StaticBody2D.new();
 		var collisionShape: CollisionShape2D = CollisionShape2D.new();
 		

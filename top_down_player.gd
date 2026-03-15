@@ -4,6 +4,7 @@ extends CharacterBody2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var player_camera: Camera2D = $PlayerCamera
 @onready var raycast: ShapeCast2D = $ShapeCast2D
+@onready var sprite: Sprite2D = $Sprite2D
 
 enum Direction { SOUTH = 1, EAST = 2, NORTH = 4, WEST = 8, SOUTHEAST = 3, NORTHEAST = 6, SOUTHWEST = 9, NORTHWEST = 12 }
 const DirectionDict: Dictionary = { 1: "south", 2: "east", 4: "north", 8: "west", 3: "southeast", 6: "northeast", 9: "southwest", 12: "northwest" }
@@ -69,4 +70,4 @@ func _physics_process(delta: float) -> void:
 	
 	move_and_slide();
 
-	player_camera.position = player_camera.position.move_toward(position, abs(position.distance_to(player_camera.position))/CAMERA_DELAY);
+	player_camera.position = player_camera.position.move_toward(sprite.global_position, abs(sprite.global_position.distance_to(player_camera.position))/CAMERA_DELAY);

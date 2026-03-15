@@ -1,8 +1,7 @@
 extends ShapeCast2D
 
 
-
-@onready var textBox = $"../../CanvasLayer/DialogueBox/Label";
+@onready var textBox: Label = $"../../../CanvasLayer/DialogueBox/Label"
 @onready var player: CharacterBody2D = $".."
 @onready var raycast: ShapeCast2D = $".";
 
@@ -137,14 +136,14 @@ func _process(delta: float) -> void:
 			get_tree().paused = false;
 		if raycast.is_colliding():
 			var collider: Node = raycast.get_collider(0);
-			if collider.get_parent() == $"../../Npcs":
-				$"../../CanvasLayer/DialogueBox".visible = true;
+			if collider.get_parent() == $"../../../Npcs":
+				textBox.get_parent().visible = true;
 				if (collider.get_meta("interacted")):
 					if (interaction_stage == 0):
 						textBox.text = dialogues_repeated[randi_range(0, 2)];
 					else:
 						interaction_stage = 0;
-						$"../../CanvasLayer/DialogueBox".visible = false;
+						textBox.get_parent().visible = false;
 						return;
 				else:
 					if (interaction_stage == 0):
@@ -160,7 +159,7 @@ func _process(delta: float) -> void:
 							player.set_meta("bad_accepted", player.get_meta("bad_accepted", 0) + 1);
 						interaction_stage = 0;
 						collider.set_meta("interacted", true);
-						$"../../CanvasLayer/DialogueBox".visible = false;
+						textBox.get_parent().visible = false;
 						return;
 				get_tree().paused = true;
 	
@@ -169,5 +168,5 @@ func _process(delta: float) -> void:
 			get_tree().paused = false;
 			interaction_stage = 0;
 			raycast.get_collider(0).set_meta("interacted", true);
-			$"../../CanvasLayer/DialogueBox".visible = false;
+			textBox.get_parent().visible = false;
 			return;
