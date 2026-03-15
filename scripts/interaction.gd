@@ -62,6 +62,7 @@ func _process(_delta: float) -> void:
 					else:
 						await Fade.fade_out().finished;
 						get_tree().change_scene_to_file("res://scenes/ending.tscn");
+						Fade.fade_in();
 						return;
 				else:
 					textBox.get_parent().visible = false;
