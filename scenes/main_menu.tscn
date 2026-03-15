@@ -1,10 +1,15 @@
 [gd_scene format=3 uid="uid://comu6j41cmiuf"]
 
 [ext_resource type="Texture2D" uid="uid://dmhgwlgmvw4m2" path="res://textures/ui/play_button.png" id="1_8ln24"]
+[ext_resource type="FontFile" uid="uid://v5c1b5d5a70p" path="res://PixelifySans-VariableFont_wght.ttf" id="1_rtw2f"]
 [ext_resource type="Script" uid="uid://dspgf174b15ee" path="res://scripts/start_game.gd" id="2_rtw2f"]
 [ext_resource type="Texture2D" uid="uid://cfw8rmd3f54k8" path="res://textures/ui/exit_button.png" id="3_oa1go"]
 [ext_resource type="Script" uid="uid://c0sx6q6024nnt" path="res://scripts/exit.gd" id="4_tbmy8"]
 [ext_resource type="Texture2D" uid="uid://btmmamhxap5w3" path="res://textures/ui/credits_button.png" id="5_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://cb684pdjl4v6n" path="res://textures/flags/uk_export.png" id="7_oa1go"]
+[ext_resource type="Script" uid="uid://df3rnsfmg0h4a" path="res://scenes/british!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!.gd" id="8_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://clam48vdeq0ol" path="res://textures/flags/srbzastava-export.png" id="9_5dd4i"]
+[ext_resource type="Script" uid="uid://bufiumds3syuh" path="res://scenes/sertbian.gd" id="9_jk1qb"]
 
 [node name="MainMenu" type="Control" unique_id=209030153]
 layout_mode = 3
@@ -15,11 +20,21 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Label" type="Label" parent="." unique_id=1031350569]
-layout_mode = 0
-offset_left = 390.0
-offset_top = 75.0
-offset_right = 771.0
-offset_bottom = 139.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.1
+anchor_right = 0.5
+anchor_bottom = 0.1
+offset_left = -415.5
+offset_right = 415.5
+offset_bottom = 116.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_rtw2f")
+theme_override_font_sizes/font_size = 96
+text = "BENEATH THE MASK"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="StartButton" type="TextureButton" parent="." unique_id=2014845393]
 layout_mode = 1
@@ -55,3 +70,24 @@ anchor_right = 0.5
 anchor_bottom = 0.6
 grow_horizontal = 2
 texture_normal = ExtResource("5_jk1qb")
+
+[node name="BRITISH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" type="TextureButton" parent="." unique_id=1381912535]
+layout_mode = 0
+offset_left = 1068.0
+offset_top = 592.0
+offset_right = 1268.0
+offset_bottom = 700.0
+texture_normal = ExtResource("7_oa1go")
+script = ExtResource("8_tbmy8")
+
+[node name="sertbian" type="TextureButton" parent="." unique_id=887283125]
+layout_mode = 0
+offset_left = 868.0
+offset_top = 582.0
+offset_right = 1060.0
+offset_bottom = 710.0
+texture_normal = ExtResource("9_5dd4i")
+script = ExtResource("9_jk1qb")
+
+[connection signal="pressed" from="BRITISH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" to="BRITISH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" method="_on_pressed"]
+[connection signal="pressed" from="sertbian" to="sertbian" method="_on_pressed"]
