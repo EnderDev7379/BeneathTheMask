@@ -66,6 +66,7 @@ func _process(_delta: float) -> void:
 						return;
 				else:
 					textBox.get_parent().visible = false;
+					return;
 				get_tree().paused = true;
 	
 	if Input.is_action_just_pressed("UnInteraction"):

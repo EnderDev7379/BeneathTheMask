@@ -66,6 +66,9 @@ sources/3 = SubResource("TileSetAtlasSource_7jktm")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rysoc"]
 size = Vector2(13, 13)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ssvqc"]
+size = Vector2(157, 65)
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_215e1"]
 radius = 48.0
 height = 191.99998
@@ -253,10 +256,17 @@ CAMERA_DELAY = 4
 direction_mode = 0
 primary_direction = 1
 
-[node name="Kucakojaserap" type="Sprite2D" parent="Environment" unique_id=559885429]
+[node name="StaticBody2D" type="StaticBody2D" parent="Environment" unique_id=1391193062]
+position = Vector2(2065, -1083)
+
+[node name="Kucakojaserap" type="Sprite2D" parent="Environment/StaticBody2D" unique_id=559885429]
 texture_filter = 1
-position = Vector2(2065, -1153)
+position = Vector2(0, -70)
 texture = ExtResource("6_264po")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/StaticBody2D" unique_id=1118930204]
+position = Vector2(-0.5, -32.5)
+shape = SubResource("RectangleShape2D_ssvqc")
 
 [node name="Fountain" type="StaticBody2D" parent="Environment" unique_id=73127391]
 position = Vector2(-166, -2307)
