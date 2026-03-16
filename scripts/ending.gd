@@ -9,6 +9,8 @@ func _ready() -> void:
 	if total_saved == 0:
 		label.text = tr("none_saved")
 	elif total_saved == -42:
+		$ColorRect/TextureRect.visible = true;
+		$ColorRect/TextureRect2.visible = true;
 		label.text = tr("end_5");
 	else:
 		var percentage_good: int = PersistantData.good_saved * 100 / total_saved;

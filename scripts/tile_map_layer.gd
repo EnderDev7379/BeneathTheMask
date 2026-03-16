@@ -6,6 +6,6 @@ extends TileMapLayer
 	#for cell in get_used_cells():
 		#if (get_cell_source_id(cell) == 3):
 			#set_cell(cell, 3, get_cell_atlas_coords(cell), randi_range(1, 4));
-		#else:
+		#else:	
 			#set_cell(cell, 3, get_cell_atlas_coords(cell), 0)
 			

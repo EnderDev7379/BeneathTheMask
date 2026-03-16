@@ -16,7 +16,7 @@
 [ext_resource type="AudioStream" uid="uid://bthyoi6mh37ij" path="res://music/music01.wav" id="13_bhx41"]
 [ext_resource type="Script" uid="uid://dmnah7yq2jii1" path="res://scripts/audio_stream_player.gd" id="14_qnb83"]
 [ext_resource type="PackedScene" uid="uid://b80iyhd4eiura" path="res://scenes/grandpa.tscn" id="15_ir15t"]
-[ext_resource type="Script" uid="uid://cvpvafyyunucu" path="res://scenes/area_2d.gd" id="17_rysoc"]
+[ext_resource type="Script" uid="uid://cvpvafyyunucu" path="res://scripts/area_2d.gd" id="17_rysoc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7jktm"]
 texture = ExtResource("1_trtic")

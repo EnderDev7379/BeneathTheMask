@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://jwgcxtqclmaf"]
+
+[ext_resource type="Script" uid="uid://7gbbnl4ll0fm" path="res://scripts/credits.gd" id="1_0bpdh"]
+
+[node name="Credits" type="Control" unique_id=85229932]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0bpdh")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1901802928]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.13701224, 0.1369906, 0.17022455, 1)
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=1007479041]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.5
+anchor_right = 0.9
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "At the start of our story there were only three friends, then they found an old friend and after that they adopted another one. That's a short story of our team “Pingvini sa Madagaskara i Mortis” or in english “The penguins from Madagaskar and Mort”. 
+Now big thanks to us, especially to our programmers.
+Vuk O. - lead programmer
+Oto - programmer assistant
+Vuk M. - artist & game designer
+Ivan - music producer
+Anastazija - writer, game & map designer
+Flags suffering victims:
+Vuk O. for painstakingly drawing Great Britain flag
+Anastazija for suffering through the complexity of the Serbian flag
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
